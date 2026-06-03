@@ -22,5 +22,3 @@ def temps_bf(n: int):
     fin = time.perf_counter()
     return fin - debut
 
-print(temps_dij(10))
-print(temps_bf(10))

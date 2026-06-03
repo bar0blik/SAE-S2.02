@@ -1,5 +1,4 @@
 import numpy as np
-import e3_1
 import random
 import time
 

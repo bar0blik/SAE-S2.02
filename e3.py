@@ -3,6 +3,10 @@ import random
 
 
 def graphe(n, a, b):
+    """
+    Génère aléatoirement une matrice n*n dont les coefficients sont entiers et compris 
+    entre a et b-1.
+    """
     #Cas de base 1, n est négatif
     if n <= 0:
         return "n doit être positif"
@@ -26,10 +30,10 @@ def graphe(n, a, b):
                 M[i, j] = random.randint(a, b - 1)
     return M
 
-def graphe_2(n, p, a, b):
+def graphe2(n, p, a, b):
     """
-    Génère aléatoirement une matrice n*n dont les coefficients ont une probabilité p 
-    d'être compris entre a et b-1 (puisque b est exclus dans l'intervale) et une probabilité 1-p d'être infini.
+    Génère aléatoirement une matrice n*n dont les coefficients ont une probabilité p d'être 
+    compris entre a et b-1 et une probabilité 1-p d'être infini.
     """
     if p < 0 or p > 1:
         return "p doit être compris entre 0 et 1"
@@ -56,4 +60,4 @@ def graphe_2(n, p, a, b):
                 M[i, j] = random.randint(a, b - 1)
     return M
 
-print(graphe_2(4, 0.3, 1, 10))
+print(graphe2(4, 0.3, 1, 10))

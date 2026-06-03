@@ -2,8 +2,7 @@ import numpy as np
 
 def identification_puissance(N_vals, seuils):
     """
-    Identifie la fonction puissance p = c * n^a sans utiliser scipy.
-    Utilise uniquement les opérations vectorielles de NumPy.
+    Identifie la fonction puissance p = c * n^a.
     """
     # 1. Passage au logarithme : X = ln(n) et Y = ln(seuil)
     X = np.log(N_vals)

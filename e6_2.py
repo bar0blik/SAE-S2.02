@@ -18,7 +18,6 @@ def experience():
         for _ in range(nb_tests):
             td += temps_dij(n)
             tb += temps_bf(n)
-
         temps_dijkstra.append(td / nb_tests)
         temps_bellman.append(tb / nb_tests)
 

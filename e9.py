@@ -5,7 +5,9 @@ def test_stat_fc2(n, p, nb_tests=200):
     """Teste la forte connexité avec une probabilité p variable."""
     succes = 0
     for _ in range(nb_tests):
+        # On génère des matrices aléatoires avec la probabilité p
         M = generer_matrice(n, p)
+        # On compte le nombre de fois où le graphe est fortement connexe
         if fc(M):
             succes += 1
     return succes / nb_tests

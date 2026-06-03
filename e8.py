@@ -16,9 +16,10 @@ def test_stat_fc(n, nb_tests=200):
     return succes / nb_tests
 
 # Pour déterminer à partir de quel n l'affirmation est vraie :
-# for n in range(2, 20):
-#     prob = test_stat_fc(n)
-#     print(f"n={n}: {prob*100}%")
-#     if prob >= 0.99:
-#         print(f"Seuil de 99% atteint pour n={n}")
-#         break
+if __name__ == "__main__":
+    for n in range(2, 20):
+        prob = test_stat_fc(n)
+        print(f"n={n}: {prob*100}%")
+        if prob >= 0.99:
+            print(f"Seuil de 99% atteint pour n={n}")
+            break

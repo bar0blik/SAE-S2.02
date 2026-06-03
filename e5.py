@@ -195,7 +195,7 @@ def Bellman_Ford_aleatoire(M, d):
     return Bellman_Ford_compteur(M, d, aretes)
 
 if __name__ == "__main__":
-    M = graphe_signe_variable(50, 0.3, 1, 10)
+    M = graphe_signe_variable(100, 0.5, 1, 10)
 
     variantes = [
         ("largeur", Bellman_Ford_largeur),
